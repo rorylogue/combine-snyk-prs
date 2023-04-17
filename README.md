@@ -1,1 +1,1 @@
-# Make a file to change to test this action
+# Combine multiple Snyk PRs into one.
