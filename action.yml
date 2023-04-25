@@ -1,0 +1,25 @@
+name: "Combine Snyk PRs"
+description: "Combine Snyk PRs with a branch prefix of snyk-upgrade-* into a new PR with all"
+
+inputs:
+  token:
+    description: "GitHub token init"
+    required: true
+  skipsChecked:
+    description: "Combine PRs if skips are checked"
+    required: false
+    default: ""
+  allStepsPass:
+    description: "Combine PRs if all steps pass"
+    required: false
+    default: ""
+  includeLabel:
+    description: "Include PRs with a specific label"
+    required: false
+  ignoreLabel:
+    description: "Ignore PRs with a specific label"
+    required: false
+
+runs:
+  using: "node16"
+  main: "dist/main.js"
