@@ -8,6 +8,8 @@ interface Options {
   ignoreLabel: string | null;
 }
 
+// Testing Github API, ignore.
+
 async function combineSnykPRs(token: string, owner: string, repo: string, options: Options) {
   const octokit = new Octokit({ auth: token });
 
